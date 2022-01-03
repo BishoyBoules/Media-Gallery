@@ -1,0 +1,161 @@
+body {
+  background-color: aqua;
+}
+
+#row {
+  display: flex;
+  margin-top: 10px;
+}
+
+.column {
+  flex: 25%;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.theDiv {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  height: 210px;
+  cursor: pointer;
+}
+
+.popupImage {
+  display: none;
+}
+
+.popup {
+  position: fixed;
+  z-index: 10;
+  top: 0%;
+  width: 600px;
+  height: 735px;
+  background-color: #ccc4b1;
+  display: none;
+  align-items: center;
+  align-self: center;
+  left: 30%;
+}
+
+#description {
+  text-align: center;
+  font-size: 30px;
+}
+
+.popup.active {
+  opacity: 1;
+  display: inline;
+}
+
+.popupImage.active {
+  opacity: 1;
+  display: inline;
+}
+
+.inactive {
+  pointer-events: none;
+}
+
+@media (max-width: 767px) {
+  body {
+    background-color: lime;
+    overflow-x: hidden;
+  }
+
+  .theBody {
+    align-items: center;
+  }
+
+  .theDiv {
+    width: 150px;
+    align-self: center;
+    align-items: center;
+  }
+
+  #row {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .theTitle {
+    width: 100%;
+  }
+
+  .popup {
+    position: fixed;
+    z-index: 10;
+    top: 0%;
+    width: 600px;
+    height: 735px;
+    background-color: #ccc4b1;
+    display: none;
+    align-items: center;
+    align-self: center;
+    width: 300px;
+    height: 380px;
+    top: 17%;
+    left: 10%;
+    align-self: center;
+  }
+
+  .popupImage {
+    width: 300px;
+  }
+
+  #description {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-color: #2600ff;
+    overflow-x: hidden;
+  }
+
+  .theBody {
+    align-items: center;
+  }
+
+  .theDiv {
+    width: 250px;
+    align-self: center;
+    align-items: left;
+  }
+
+  #row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .theTitle {
+    width: 100%;
+  }
+
+  .popup {
+    position: fixed;
+    z-index: 10;
+    top: 0%;
+    width: 600px;
+    height: 735px;
+    background-color: #ccc4b1;
+    display: none;
+    align-items: center;
+    align-self: center;
+    width: 415px;
+    height: 550px;
+    top: 17%;
+    left: 180px;
+    align-self: center;
+  }
+
+  .popupImage {
+    width: 415px;
+  }
+
+  #description {
+    font-size: 22px;
+  }
+}
